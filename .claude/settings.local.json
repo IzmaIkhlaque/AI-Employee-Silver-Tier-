@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv run python:*)",
+      "Bash(git check-ignore:*)",
+      "Bash(claude mcp add:*)",
+      "Bash(echo watchdog not found:*)",
+      "Bash(head:*)",
+      "Bash(cd \"D:\\\\Izma folder\\\\Governer sindh course\\\\Q4\\\\GEMINI_CLI\\\\HACKATHONS\\\\Ai-Employee-FTE\\\\AI_Employee_Vault\" && python -c \"\nimport sys\nsys.path.insert\\(0, 'watchers'\\)\nfrom filesystem_watcher import FileSystemWatcher\nprint\\('Import OK'\\)\n\" 2>&1)",
+      "Bash(cd \"D:\\\\Izma folder\\\\Governer sindh course\\\\Q4\\\\GEMINI_CLI\\\\HACKATHONS\\\\Ai-Employee-FTE\\\\AI_Employee_Vault\" && python -c \"\nimport sys, time, threading\nsys.path.insert\\(0, 'watchers'\\)\nfrom filesystem_watcher import FileSystemWatcher\n\n# Use Inbox as the watch folder\nwatcher = FileSystemWatcher\\(\n    watch_path='D:/Izma folder/Governer sindh course/Q4/GEMINI_CLI/HACKATHONS/Ai-Employee-FTE/AI_Employee_Vault/Inbox',\n    dry_run=True\n\\)\n\n# Start in background thread\nt = threading.Thread\\(target=watcher.run, daemon=True\\)\nt.start\\(\\)\nprint\\('Watcher started - watching Inbox...'\\)\ntime.sleep\\(2\\)\n\n# Drop a test file\nfrom pathlib import Path\ntest = Path\\('D:/Izma folder/Governer sindh course/Q4/GEMINI_CLI/HACKATHONS/Ai-Employee-FTE/AI_Employee_Vault/Inbox/TEST_drop_now.txt'\\)\ntest.write_text\\('test file drop'\\)\nprint\\(f'Dropped: {test.name}'\\)\ntime.sleep\\(3\\)\n\n# Check result\nwatcher.stop\\(\\)\nprint\\('Done'\\)\n\" 2>&1)"
+    ]
+  }
+}

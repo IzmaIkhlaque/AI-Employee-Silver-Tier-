@@ -1,0 +1,6 @@
+.env
+__pycache__/
+*.log
+.obsidian/workspace.json
+node_modules/
+memory/
